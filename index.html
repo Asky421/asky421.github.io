@@ -9,74 +9,52 @@
       body {
         margin: 3px;
         border: 6px;
-        height: 100vh;
-        border-style: double;
-        border-color: aqua;
+        height: 97vh;
+        border: aqua double 6px;
+        font-size: 18px;
+        text-align: center;
+        overflow: auto;
+      }
+      .flex {
+        display: flex;
+      }
+      .blue {
+        background-color: #8ebbff;
       }
     </style>
+    <!--元素有跑出边框的可能-->
   </head>
   <body
     style="
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-content: center;
       padding: 2px;
     "
+    class="flex"
   >
     <div
       style="
-        background-color: #74acff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      "
-    >
-      <img
-        src="https://s1.ax1x.com/2023/01/05/pSAAXI1.jpg"
-        alt="我的头像——兔耳miku"
-        width="70px"
-        height="70px"
-      />
-      <h5 style="color: rgb(231, 80, 193); text-align: center">
-        “欢迎来到Asky的网站，<br />我是小助理miku！”
-      </h5>
-    </div>
-    <div
-      style="
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-content: stretch;
-        padding: 20px;
-        text-align: center;
-        font-size: 12px;
+        justify-content: space-between;
         flex: 1;
-        color: rgba(184, 140, 255, 0.966);
+        color: #b88cfff6;
+        background-color: #d9ebff;
       "
+      class="flex"
     >
-      <p style="font-size: 15px; font-family: Kaiti">
-        亲爱的访客朋友们，<br />您好！！！<br />
-        非常感谢您的到来！
-      </p>
+      <h2 style="color: #fa84dc; padding: 3px">“欢迎来到Asky的网站！”</h2>
       <p>
         本网站为Asky的个人网站，<br />
-        并且日后会不断更新完善。<br />敬请期待！
+        并且日后会不断更新完善。<br />
+        敬请期待！
       </p>
+      <img src="./knd.jpg" alt="奏宝-麦外敷" style="max-width: 577px" />
+      <!--电脑端图片不能居中-->
     </div>
-    <div
-      style="
-        background-color: #74acff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 9px;
-        color: #1f1e33;
-      "
-    >
+    <div style="color: #1f1e33" class="blue">
       <p>最后祝您有个美好的一天 εεε≡٩(๑>₃<)۶</p>
+      <p style="font-size: 12px">该网站最后更新于： 2023年1月13日 16:10</p>
     </div>
   </body>
 </html>
