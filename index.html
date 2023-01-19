@@ -25,16 +25,20 @@
         display: flex;
         justify-content: center;
         align-content: center;
+        align-items: center;
       }
       .blue {
         background-color: #8ebbff;
+      }
+      .s{
+        font-size: 12px
       }
     </style>
     <!--想让边框占全，元素只在边框内滚动-->
     <!--手机端效果更好（毕竟都是用手机）-->
   </head>
   <body
-    onload="startTime()"
+    onload="startTime();hpBirth()"
   >
     <div
       style="
@@ -46,9 +50,9 @@
       "
     >
       <h3 style="color: #fa84dc" id="welcome">“欢迎来到Asky的网站！”</h3>
+        <span>现在是 <span id="time"></span></span>
       <script>
         <button id="two" type="button" onclick="weeelcome()">是真的，不要再点了</button>
-        
       </script>
       <span id="bomb">
         <button id="trap" type="button" onclick="replace()">别点</button>
@@ -82,8 +86,9 @@
             vx:Asky1361<br />\
             qq:2154676620</b>';
             break;
-            case 11:alert("再点也没有了〒▽〒");
-            break;
+          }
+          if(times>10){
+            alert("再点也没有了〒▽〒")
           }
         }
         function weeelcome(){
@@ -100,6 +105,28 @@
         并且日后会不断更新完善。<br />
         敬请期待！
       </p>
+      <b id="hb"></b>
+      <script>
+        function hpBirth(){
+          let today=new Date();
+          let y=today.getFullYear();
+          let m=today.getMonth()+1;
+          let d=today.getDate();
+          if(m===1&&d===19){
+            document.getElementById("hb").innerHTML='\
+            今天是站长Asky的生日<br />\
+            让我们祝TA生日快乐！<br /><br />\
+            <button type="button" onclick="cele()">点击送上生日祝福</button><br />\
+            <span id="survey"></span>\
+            ';
+          }
+        }
+        function cele(){
+          document.getElementById("survey").innerHTML='\
+          <iframe src="https://www.powercx.com/r/9n085" frameborder="0" height="500px"></iframe>\
+          '
+        }
+      </script>
       <img
         src="./knd.jpg"
         alt="奏宝-麦外敷"
@@ -132,9 +159,7 @@
         }// 在小于10的数字前加一个‘0’
       </script>
       <p>
-        <span style="font-size: 12px;">现在是</span><span id="time"></span><br />
-        <small><del>在网址后面加上你的名字会有惊喜（小声）</del></small
-        ><br />
+        <del class="s">在网址后面加上你的名字会有惊喜（小声）</del><br />
         最后祝您有个美好的一天<small>εεε≡٩(๑>₃&#60)۶</small><br />
         <a target="_blank" style="color: #8ebbff;text-decoration:none" href="https://www.bilibili.com/">神秘链接</a
         ><br />
@@ -160,7 +185,7 @@
           onclick="red()"
           onmouseout="purple()"
         >求你点一下我吧555555</span><br />
-        <span style="font-size: 12px"
+        <span class="s"
           >该网站最后更新于：2023年1月19日 14:08</span
         >
       </p>
