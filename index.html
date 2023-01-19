@@ -8,6 +8,7 @@
     <meta name="description" content="个人 网站 网页 Asky knd 奏" />
     <link rel="shortcut icon" href="./knd.jpg" />
     <title>Asky的网站</title>
+    <script src="liZi.js"></script>
     <style>
       body {
         margin: 9px;
@@ -48,12 +49,9 @@
         color: #b88cfff6;
         background-color: #d9ebff;
       "
-    >
+    ><!--flex: 1暂时没用-->
       <h3 style="color: #fa84dc" id="welcome">“欢迎来到Asky的网站！”</h3>
         <span>现在是 <span id="time"></span></span>
-      <script>
-        <button id="two" type="button" onclick="weeelcome()">是真的，不要再点了</button>
-      </script>
       <span id="bomb">
         <button id="trap" type="button" onclick="replace()">别点</button>
       </span>
@@ -83,7 +81,7 @@
             break;
             case 10:document.getElementById("bomb").innerHTML='\
             <b id="trap" onclick="replace()">交个朋友吧(*^▽^*)<br />\
-            vx:Asky1361<br />\
+            vx:Asky421<br />\
             qq:2154676620</b>';
             break;
           }
@@ -100,6 +98,7 @@
           <button id="trap" type="button" onclick="replace()">看吧说过你了</button>';
         }
       </script>
+      <!--可改进为数组-->
       <p>
         本网站为<strong>Asky</strong>的个人网站，<br />
         并且日后会不断更新完善。<br />
@@ -170,7 +169,7 @@
           let click=0
           function red(){
             document.getElementById("fakeLink").style.color="red";
-            setTimeout("purple()",200) 
+            setTimeout("purple()",150) 
           }
           function purple(){
               alert("哈哈哈你被骗了，点空白区域试试吧");
@@ -186,11 +185,11 @@
           onclick="red()"
         >求你点一下我吧555555</span><br />
         <span class="s"
-          >该网站最后更新于：2023年1月19日 17:45</span
+          >该网站最后更新于：2023年1月19日 20:50</span
         >
       </p>
       <!--字体不是系统字体-->
-      <!--本地最后更新于：2023年1月19日 17:45-->
+      <!--本地最后更新于：2023年1月19日 20:50-->
       <!--目前只能手动调整时间-->
     </div>
   </body>
