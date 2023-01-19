@@ -109,13 +109,13 @@
       <script>
         function hpBirth(){
           let today=new Date();
-          let y=today.getFullYear();
+          let y=today.getFullYear()-2007;
           let m=today.getMonth()+1;
           let d=today.getDate();
-          if(m===1&&d===19){
-            document.getElementById("hb").innerHTML='\
-            今天是站长Asky的生日<br />\
-            让我们祝TA生日快乐！<br />\
+          if(m===1&&d===20){
+            document.getElementById("hb").innerHTML=
+            '今天是站长Asky的'+y+'岁生日<br />\
+            让我们祝TA生日快乐！！！<br />\
             <a href="https://www.powercx.com/r/9n085" style="color:#77a4ff">点击送上生日祝福</a>\
             ';
           }
@@ -128,7 +128,7 @@
           <iframe src="https://www.powercx.com/r/9n085" frameborder="0" height="500px"></iframe>\
           '
         }
-        *///手机端加载不出来
+        *///废，手机端加载不出来
       </script>
       <img
         src="./knd.jpg"
@@ -170,13 +170,11 @@
           let click=0
           function red(){
             document.getElementById("fakeLink").style.color="red";
-            click=1;
+            setTimeout("purple()",200) 
           }
           function purple(){
-            if(click=1){
               alert("哈哈哈你被骗了，点空白区域试试吧");
               document.getElementById("fakeLink").style.color="purple"
-            }
           }
         </script>
         <span
@@ -186,15 +184,13 @@
             color:blue;
           "
           onclick="red()"
-          onmouseout="purple()"
         >求你点一下我吧555555</span><br />
-        <!--手机端不能实现鼠标的移动-->
         <span class="s"
-          >该网站最后更新于：2023年1月19日 14:08</span
+          >该网站最后更新于：2023年1月19日 17:45</span
         >
       </p>
       <!--字体不是系统字体-->
-      <!--本地最后更新于：2023年1月19日 14:08-->
+      <!--本地最后更新于：2023年1月19日 17:45-->
       <!--目前只能手动调整时间-->
     </div>
   </body>
