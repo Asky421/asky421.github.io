@@ -1,12 +1,29 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Asky" />
-    <meta name="description" content="个人 网站 网页 Asky knd 奏" />
-    <link rel="shortcut icon" href="./knd.jpg" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="author"
+      content="Asky"
+    />
+    <meta
+      name="description"
+      content="个人 网站 网页 Asky knd 奏"
+    />
+    <link
+      rel="shortcut icon"
+      href="knds.png"
+    />
     <title>Asky的网站</title>
     <style>
       body {
@@ -30,16 +47,21 @@
       .blue {
         background-color: #8ebbff;
       }
-      .s{
-        font-size: 12px
+      .s {
+        font-size: 12px;
       }
     </style>
     <!--想让边框占全，元素只在边框内滚动-->
     <!--手机端效果更好（毕竟都是用手机）-->
+    <script>
+      "use strict";
+    </script>
+    <script src="js\button.js"></script>
+    <script src="js\hB.js"></script>
+    <script src="js\clock.js"></script>
+    <script src="js\fakeLink.js"></script>
   </head>
-  <body
-    onload="startTime();hpBirth()"
-  >
+  <body onload="startTime();hpBirth()">
     <div
       style="
         flex-direction: column;
@@ -48,88 +70,30 @@
         color: #b88cfff6;
         background-color: #d9ebff;
       "
-    ><!--flex: 1暂时没用-->
-      <h3 style="color: #fa84dc" id="welcome">“欢迎来到Asky的网站！”</h3>
-        <span>现在是 <span id="time"></span></span>
+      ><!--flex: 1暂时没用-->
+      <h3
+        style="color: #fa84dc"
+        id="welcome"
+        >“欢迎来到Asky的网站！”</h3
+      >
+      <span>现在是 <span id="time"></span></span>
       <span id="bomb">
-        <button id="trap" type="button" onclick="replace()">别点</button>
+        <button
+          id="trap"
+          type="button"
+          onclick="replace()"
+          >别点</button
+        >
       </span>
-      <script>
-        let times=0
-        function replace(){
-          times=++times;
-          switch(times){
-            case 1:document.getElementById("trap").innerHTML="是真的，不要再点了";
-            break;
-            case 2:document.getElementById("trap").innerHTML="别点了，别点了";
-            break;
-            case 3:document.getElementById("trap").innerHTML="你怎么就不听话呢";
-            break;
-            case 4:document.getElementById("trap").innerHTML="不要点了，求你了求你了";
-            break;
-            case 5:document.getElementById("bomb").innerHTML='\
-            <button id="two" type="button" onclick="weeelcome()">再给你最后一次机会</button>';
-            break;
-            case 6:document.getElementById("trap").innerHTML="略略略";
-            break;
-            case 7:document.getElementById("trap").innerHTML="别点了，我不是故意的";
-            break;
-            case 8:document.getElementById("trap").innerHTML="我真不是故意的";
-            break;
-            case 9:document.getElementById("trap").innerHTML="对不起对不起对不起";
-            break;
-            case 10:document.getElementById("bomb").innerHTML='\
-            <b id="trap" onclick="replace()">交个朋友吧(*^▽^*)<br />\
-            vx:Asky421<br />\
-            qq:2154676620</b>';
-            break;
-          }
-          if(times>10){
-            alert("再点也没有了〒▽〒")
-          }
-        }
-        function weeelcome(){
-          x=document.getElementById("welcome");
-          x.innerHTML="欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎";
-          x.style.margin=0
-          //想让欢迎溢出屏幕
-          document.getElementById("bomb").innerHTML='\
-          <button id="trap" type="button" onclick="replace()">看吧说过你了</button>';
-        }
-      </script>
-      <!--可改进为数组-->
+
       <p>
         本网站为<strong>Asky</strong>的个人网站，<br />
         并且日后会不断更新完善。<br />
         敬请期待！
       </p>
       <b id="hb"></b>
-      <script>
-        function hpBirth(){
-          let today=new Date();
-          let y=today.getFullYear()-2007;
-          let m=today.getMonth()+1;
-          let d=today.getDate();
-          if(m===1&&d===20){
-            document.getElementById("hb").innerHTML=
-            '今天是站长Asky的'+y+'岁生日<br />\
-            让我们祝TA生日快乐！！！<br />\
-            <a href="https://www.powercx.com/r/9n085" style="color:#77a4ff">点击送上生日祝福</a>\
-            ';
-          }
-        }
-        /*
-        <button type="button" onclick="cele()">点击送上生日祝福</button><br />\
-          <span id="survey"></span>\
-        function cele(){
-          document.getElementById("survey").innerHTML='\
-          <iframe src="https://www.powercx.com/r/9n085" frameborder="0" height="500px"></iframe>\
-          '
-        }
-        *///废，手机端加载不出来
-      </script>
       <img
-        src="./knd.jpg"
+        src="knd.jpg"
         alt="奏宝-麦外敷"
         width="100%"
         height="auto"
@@ -137,58 +101,29 @@
         onclick="alert('别碰我的奏宝(｡•ˇ‸ˇ•｡)')"
       />
     </div>
-    <div style="color: #1f1e33" class="blue">
-      <script>
-        function startTime(){
-        let today=new Date();
-        let y=today.getFullYear();
-        let m=today.getMonth()+1;
-        let d=today.getDate()
-      	let h=today.getHours();
-	      let min=today.getMinutes();
-	      let s=today.getSeconds();
-	      min=checkTime(min);
-      	s=checkTime(s);
-	      document.getElementById("time").innerHTML=y+"年"+m+"月"+d+"号"+" "+h+":"+min+":"+s;
-	      t=setTimeout(function(){startTime()},500);
-        }
-        function checkTime(i){
-        	if (i<10){
-	        	i="0" + i;
-	        }  
-	        return i;
-        }// 在小于10的数字前加一个‘0’
-      </script>
+    <div
+      style="color: #1f1e33"
+      class="blue"
+    >
       <p>
         <del class="s">在网址后面加上你的名字会有惊喜（小声）</del><br />
-        最后祝您有个美好的一天<small>εεε≡٩(๑>₃&#60)۶</small><br />
-        <a target="_blank" style="color: #8ebbff;text-decoration:none" href="https://www.bilibili.com/">神秘链接</a
+        最后祝您有个美好的一天<small>(๑╹◡╹)ﾉ"""</small><br />
+        <a
+          target="_blank"
+          style="color: #8ebbff; text-decoration: none"
+          href="https://www.bilibili.com/"
+          >神秘链接</a
         ><br />
-        <script>
-          let click=0
-          function red(){
-            document.getElementById("fakeLink").style.color="red";
-            setTimeout("purple()",150) 
-          }
-          function purple(){
-              alert("哈哈哈你被骗了，点空白区域试试吧");
-              document.getElementById("fakeLink").style.color="purple"
-          }
-        </script>
         <span
           id="fakeLink"
-          style="
-            text-decoration:underline;
-            color:blue;
-          "
+          style="text-decoration: underline; color: blue"
           onclick="red()"
-        >求你点一下我吧555555</span><br />
-        <span class="s"
-          >该网站最后更新于：2023年1月19日 20:50</span
-        >
+          >求你点一下我吧555555</span
+        ><br />
+        <span class="s">该网站最后更新于：2023年1月21日 10:50</span>
       </p>
       <!--字体不是系统字体-->
-      <!--本地最后更新于：2023年1月19日 20:50-->
+      <!--本地最后更新于：2023年1月21日 10:50-->
       <!--目前只能手动调整时间-->
     </div>
   </body>
